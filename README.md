@@ -213,3 +213,22 @@ This project combines natural language understanding and structured data generat
 https://docs.readme.com/rdmd/docs/code-blocks
 
 **Transcript:** NoteGPT_Transformers (how LLMs work) explained visually _ DL5.txt
+
+## Create Python Virtual Environment
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+## Install Python Packages
+
+```bash
+pip3 install -r requirements.txt
+```
+
+## Run API via uvicorn
+
+```bash
+uvicorn fake_data_api:app --reload
+```
