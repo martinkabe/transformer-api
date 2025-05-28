@@ -12,6 +12,21 @@ This approach simulates how large language models can be adapted for practical, 
 
 A transformer is a specific kind of neural network, which lies at the core of many modern AI applications like ChatGPT, DALL-E, and translation systems. It was introduced in 2017 and excels at modeling relationships in sequential data.
 
+Transformer architecture was introduced by a team of researchers at Google’s Brain division in a 2017 paper titled “Attention Is All You Need.” This advent of the transformer marked a seismic shift in the landscape of NLP. It ushered in the era of large language models (LLMs) that have since demonstrated remarkable advancements in the realm of NLP, surpassing the capabilities of earlier-generation recurrent neural networks (RNNs). From machine translation and sentiment analysis to question answering and text summarization, LLMs based on transformers have set new benchmarks and opened up exciting possibilities for the future of AI-driven language tasks.
+
+**A transformer accomplishes the following:**
+
+1. Pays Attention: Just like you might pay extra attention to important parts of a story, the transformer pays attention to important words in a sentence.
+
+2. Understands Context: The transformer looks at all the words in the sentence together, not one after the other. This helps it understand how words depend on each other.
+
+3. Weighs Relationships: It figures out how words are related to each other. For example, if the sentence is about a cat and a mouse, it knows that these words are connected.
+
+4. Combines Insights: The transformer combines all this knowledge to understand the whole story and how words fit together.
+
+5. Predicts Next Steps: With its understanding, it can even guess what words might come next in the story.
+
+
 ## What We Built
 
 * A minimal transformer-based classifier that maps prompts to schemas
@@ -205,6 +220,24 @@ This project combines natural language understanding and structured data generat
 * Transformers in NLP
 
 * Prompt engineering
+
+
+## Key Differences Between MCP and APIs
+
+MCP and APIs serve similar purposes — connecting systems — but they differ in ways that matter for AI.
+
+1. Purpose
+APIs are general-purpose. They were designed for software-to-software communication, not specifically for AI. MCP, on the other hand, was built from the ground up for large language models. It standardizes how LLMs fetch context and use tools.
+
+2. Discovery
+With a traditional API, you need documentation. The API doesn’t tell you what it can do; you have to already know. MCP flips this. An MCP server can be queried — “What tools do you offer?” — and it responds with a machine-readable list of functions, their inputs, and their outputs. An AI agent can adapt to new capabilities without pre-programming.
+
+3. Standardization
+Every REST API is different. One might use OAuth for authentication, another API keys, another some custom scheme. One returns XML, another JSON. MCP eliminates this variability. All MCP servers speak the same protocol, so once an AI knows how to use one, it knows how to use any of them.
+
+4. Adaptability
+If a REST API changes — a new endpoint, a modified response format — the client breaks until it’s updated. MCP avoids this because the client discovers capabilities at runtime. If a server adds a new tool, the AI can start using it immediately.
+
 
 # Important Resources
 
