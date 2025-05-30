@@ -249,8 +249,10 @@ https://docs.readme.com/rdmd/docs/code-blocks
 
 ## Create Python Virtual Environment
 
-```bash
+```bash create .venv
 python3 -m venv .venv
+```
+```bash source .venv
 source .venv/bin/activate
 ```
 
